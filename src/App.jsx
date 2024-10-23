@@ -1,4 +1,7 @@
-
+import Nav from './components/Nav';
+// import Header from './components/Header';
+// import Section from './components/Section';
+// import SupportChat from './components/Supportchat';
 import './App.css'
 
 function App() {
@@ -8,7 +11,10 @@ function App() {
     <>
 
 <div>
-
+<Nav />
+{/* <Header />
+<Section />
+<SupportChat /> */}
 </div>
     </>
   )
