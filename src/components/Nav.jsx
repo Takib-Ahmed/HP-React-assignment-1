@@ -11,12 +11,12 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="p-3 px-24 flex justify-between items-center bg-white">
+    <nav className=" p-3 px-24 flex justify-between items-center bg-gray-100 border border-b-2 border-b-gray-200    ">
       <div className=""><img src="/public/LOGOEXPLORATION Search Bar Icon 8.png" alt="" /></div>
-      <ul className="flex gap-5 list-none">
+      <ul className="flex gap-5 list-none ">
         {navLinks.map((link, index) => (
           <li key={index}>
-            <a href={link.path} className="no-underline text-black">{link.name}</a>
+            <a href={link.path} className="no-underline text-gray-600 text-[14px] ">{link.name}</a>
           </li>
         ))}
       </ul>

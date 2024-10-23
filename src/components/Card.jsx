@@ -3,14 +3,14 @@
 
 const Card = ({ title, location, price, image }) => {
   return (
-    <div className="border border-gray-300 rounded-lg overflow-hidden w-64 shadow-md">
+    <div className=" rounded-lg overflow-hidden w-[19.4rem]  text-[small] " >
       <img 
         src={image} 
         alt={title} 
-        className="w-full h-40 object-cover" 
+        className="w-full  hover:scale-[1.05] transition-all duration-[1000ms]" 
       />
-      <div className="p-4">
-        <h3 className="text-lg font-semibold">{title}</h3>
+      <div className="grid text-start p-4 ps-0 pt-3 gap-0.5">
+        <h3 className="text-lg font-bold">{title}</h3>
         <p className="text-gray-600">{location}</p>
         <p className="text-black font-bold">{price}</p>
       </div>

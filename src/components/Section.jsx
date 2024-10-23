@@ -3,15 +3,17 @@ import Card from './Card';
 
 const Section = () => {
   const cards = [
-    { title: 'Whitechapel Rd.', location: 'Whitechapel Rd.', price: '$1,456,654.00',                    image: '/path/to/image1.jpg' },
-    { title: 'Whitechapel Rd.', location: 'Whitechapel Rd.', price: '$1,456,654.00',                    image: '/path/to/image2.jpg' },
-    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/path/to/image3.jpg' },
-    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/path/to/image4.jpg' },
-    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/path/to/image5.jpg' }
+    { title: 'Whitechapel Rd.', location: 'Whitechapel Rd.', price: '$1,456,654.00',                    image: '/public/Section/disas1.png' },
+    { title: 'Whitechapel Rd.', location: 'Whitechapel Rd.', price: '$1,456,654.00',                    image: '/public/Section/Rectangle 2.png'},
+    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/public/Section/Rectangle3.png' },
+    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/public/Section/Rectangle 4.png' },
+    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/public/Section/Rectangle5.png' },
+    { title: 'Tulare County', location: 'Tulare County, Los Angeles, CA 23415', price: '$1,456,654.00', image: '/public/Section/Rectangle6.png' },
+
   ];
 
   return (
-    <section className="flex flex-wrap justify-center gap-6 p-6">
+    <section className="flex flex-wrap px-24 py-10 gap-7 p-6">
       {cards.map((card, index) => (
         <Card key={index} {...card}   />
       ))}
