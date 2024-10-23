@@ -4,7 +4,7 @@ const Nav = () => {
   const navLinks = [
     { name: 'Dashboard', path: '/dashboard' },
     { name: 'Incidents', path: '/incidents' },
-    { name: 'Locations', path: '/locations' },
+    { name: 'Locations', path: '/location' },
     { name: 'Activities', path: '/activities' },
     { name: 'Documents', path: '/documents' },
     { name: 'Cypher AI', path: '/cypher-ai' }
