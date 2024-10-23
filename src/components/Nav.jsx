@@ -11,8 +11,8 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="p-3 flex justify-between items-center bg-white">
-      <div className="text-2xl font-bold">DisastersIO</div>
+    <nav className="p-3 px-24 flex justify-between items-center bg-white">
+      <div className=""><img src="/public/LOGOEXPLORATION Search Bar Icon 8.png" alt="" /></div>
       <ul className="flex gap-5 list-none">
         {navLinks.map((link, index) => (
           <li key={index}>
