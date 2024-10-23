@@ -1,12 +1,16 @@
+/* eslint-disable react/prop-types */
+import Button from "./button";
 
 
-const HeaderComponent = () => {
+const HeaderComponent = ({p,h1,text}) => {
+
+
   return (
     <div className="bg-gray-100 p-4 flex justify-between items-center px-24">
       {/* Left Section */}
       <div>
-        <p className="text-gray-500">Welcome back</p>
-        <h1 className="text-2xl font-bold">Dashboard</h1>
+        <p className="text-gray-500" >{p}</p>
+        <h1 className="text-2xl font-bold">{h1}</h1>
       </div>
 
       {/* Right Section */}
@@ -23,9 +27,7 @@ const HeaderComponent = () => {
         </button>
 
         {/* Cypher AI Button */}
-        <button className="bg-orange-500 text-white px-4 py-2 rounded-md shadow-md">
-          Cypher AI
-        </button>
+<Button text={text}  />
       </div>
     </div>
   );
